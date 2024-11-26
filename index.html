@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Voyage</title>
+        <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="main h-full w-full">
+            <div class="navbar-container w-full flex justify-center items-center py-4">
+                <div class="navbar w-[90%] h-[80px] bg-[#132742] flex justify-between px-10 items-center rounded-full">
+                    <div class="nav-item">
+                        <a href="" class="kameron text-white font-bold text-2xl">
+                            Home Voyage
+                        </a>
+                    </div>
+                    <div class="nav-item text-white text-md lg:flex gap-10 hidden">
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Home
+                        </a>
+
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Properties
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Buy
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Sell
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Rent
+                        </a>
+                    </div>
+
+                    <div class="nav-item flex gap-10 items-center text-white font-semibold relative">
+                        <a
+                            href="#"
+                            class="px-8 py-2 bg-white rounded-full text-black relative after:content-[''] after:absolute after:top-[100%] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[100%] after:bg-[#132742] after:rounded-full after:transition-all after:duration-300 hover:after:w-[120%] hover:after:top-0 hover:text-white z-0 text-black transition-colors duration-300 overflow-hidden hidden md:flex"
+                        >
+                            <span class="relative z-10">SignUp</span>
+                        </a>
+
+                        <a href="#" class="hidden md:flex">Login</a>
+                    </div>
+                    <div class="nav-item sm:block md:hidden text-white">
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-section w-full h-[calc(100vh-112px)] lg:flex flex-col justify-between lg:px-10 px-4 relative pt-2 flex-wrap">
+                <div class=" hero-left lg:w-[55%] w-full mt-8">
+                    <p class="hero-item-left text-7xl text-[#132742] font-bold text-center lg:text-left">
+                        A New Way to Find Your Home.
+                    </p>
+                    <p class="hero-item-left text-xl mt-6 text-center lg:text-left">Discover, buy, or rent your dream property with expert guidance — all in one place.</p>
+                    <div class="hero-item-left flex lg:items-center justify-center lg:justify-start lg:gap-10 gap-4 mt-4">
+                        <a href="#" class="lg:px-10 px-6 py-2 border-2 border-[#132742] rounded-full relative text-[#132742] z-10 overflow-hidden items-center group font-semibold">
+                            <span class="relative z-20">Get More Info</span>
+                            <i
+                                class="fa-solid fa-arrow-right text-white absolute opacity-0 right-[100%] pr-2 top-1/2 -translate-y-1/2 transition-all duration-300 group-hover:opacity-100 group-hover:right-2 group-hover:text-[#132742] font-semibold"
+                            ></i>
+                        </a>
+                        <div class="flex">
+                            <a
+                                href="#"
+                                class="lg:px-12 px-8 py-2 bg-[#132742] rounded-full text-white font-semibold lg:text-lg text-md relative after:content-[''] after:absolute after:top-[100%] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[100%] after:bg-white after:rounded-full after:transition-all after:duration-300 hover:after:w-[100%] hover:after:top-0 hover:text-[#132742] z-10 transition-colors duration-300 overflow-hidden"
+                            >
+                                <span class="relative z-20">See Pricing</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-item-left flex lg:justify-between justify-center gap-10 mt-6 flex-wrap">
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="lg:text-6xl text-5xl font-semibold text-[#132742]">10+</p>
+                            <p class="lg:text-xl text-md">Year Experience</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="lg:text-6xl text-5xl font-semibold text-[#132742]">29</p>
+                            <p class="lg:text-xl text-md">Awards Gained</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <p class="lg:text-6xl text-5xl font-semibold text-[#132742]">1K+</p>
+                            <p class="lg:text-xl text-md">Property Selled</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right hero-item lg:w-[35%] hidden lg:flex relative flex mt-4 lg:mt-0">
+                    <img src="https://images.pexels.com/photos/2253916/pexels-photo-2253916.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="hero-item-right w-[110%] rounded-t-full" />
+                    <img src="https://images.pexels.com/photos/2371975/pexels-photo-2371975.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="hero-item-right absolute w-[60%] bottom-0 left-[-10%] rounded-t-full px-2 pt-2 bg-white" />
+                </div>
+                <div
+                    class="serach-div lg:w-[94.1%] w-full lg:flex lg:py-10 py-4 px-4 lg:absolute relative bg-white bottom-[-4%] z-50 rounded-lg flex flex-wrap gap-6 justify-center lg:justify-around items-center"
+                    style="box-shadow: 0px 0px 20px #132742;"
+                >
+                    <div class="serach-div-items flex flex-col">
+                        <p class="text-[#132742] font-bold text-xl">Location <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="font-semibold text-gray-600 text-lg">Gujarat, India</p>
+                    </div>
+                    <div class="serach-div-items" >
+                        <p class="text-[#132742] font-bold text-xl">City <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="font-semibold text-gray-600 text-lg">Ahmedabad</p>
+                    </div>
+                    <div class="serach-div-items">
+                        <p class="text-[#132742] font-bold text-xl">Budget Range <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="font-semibold text-gray-600 text-lg">₹ 25 - 30 Lakhs</p>
+                    </div>
+                    <div class="serach-div-items flex">
+                        <a
+                            href="#"
+                            class="lg:px-12 px-8 py-2 bg-[#132742] rounded-full text-white font-semibold lg:text-lg text-md relative after:content-[''] after:absolute after:top-[100%] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[100%] after:bg-white after:rounded-full after:transition-all after:duration-300 hover:after:w-[100%] hover:after:top-0 hover:text-[#132742] z-10 transition-colors duration-300 overflow-hidden"
+                        >
+                            <span class="relative z-20"><i class="fa-solid fa-magnifying-glass pr-2"></i>Search</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxes-div w-full mt-28 lg:mt-0 pt-20 px-4 lg:px-10 pb-10 flex flex-col items-center">
+                <div class="boxes-heading text-center">
+                <h1 class=" text-5xl font-bold text-[#132742]">We Buy, Sell & Rent Properties</h1>
+                <h3 class=" mt-2 text-xl text-gray-600">Count on us as your trusted partner for all your real estate needs.</h3>
+            </div>
+
+                <div class="box mt-8 flex lg:justify-around justify-center flex-wrap gap-10 lg:gap-0">
+                    <div class="box lg:w-1/4 w-[90%] bg-white p-8 flex flex-col items-left rounded-lg" style="box-shadow: 0px 0px 10px rgba(19, 39, 66, 0.3);">
+                        <div class="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6286/6286755.png" alt="Buy Image" class="w-16 h-16" />
+                        </div>
+                        <h1 class="text-4xl font-semibold text-[#132742] mt-2 inline">Buy Properties</h1>
+                        <div class="mt-4 leading-[20px] text-gray-600">Explore a wide range of properties and find the perfect one that fits your lifestyle and needs with our expert guidance!</div>
+
+                        <div class="flex items-center space-x-4 mt-4 group">
+                            <hr class="flex-grow border-t-2 border-[#132742] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100" />
+                            <a href="#" class="text-[#132742] font-semibold transition-transform duration-500 group-hover:scale-110">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="box lg:w-1/4 w-[90%] bg-white p-8 flex flex-col items-left rounded-lg" style="box-shadow: 0px 0px 10px rgba(19, 39, 66, 0.3);">
+                        <div class="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6684/6684226.png" alt="Buy Image" class="w-16 h-16" />
+                        </div>
+                        <h1 class="text-4xl font-semibold text-[#132742] mt-2 inline">Sell Properties</h1>
+                        <div class="mt-4 leading-[20px] text-gray-600">Unlock your property's true potential with our expert assistance for a seamless selling experience and maximum top value!</div>
+
+                        <div class="flex items-center space-x-4 mt-4 group">
+                            <hr class="flex-grow border-t-2 border-[#132742] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100" />
+                            <a href="#" class="text-[#132742] font-semibold transition-transform duration-500 group-hover:scale-110">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="box lg:w-1/4 w-[90%] bg-white p-8 flex flex-col items-left rounded-lg" style="box-shadow: 0px 0px 10px rgba(19, 39, 66, 0.3);">
+                        <div class="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/602/602320.png" alt="Buy Image" class="w-16 h-16" />
+                        </div>
+                        <h1 class="text-4xl font-semibold text-[#132742] mt-2 inline">Rent Properties</h1>
+                        <div class="mt-4 leading-[20px] text-gray-600">Maximize your rental income potential with our expert support for a smooth and hassle-free leasing experience and optimal results!</div>
+
+                        <div class="flex items-center space-x-4 mt-4 group">
+                            <hr class="flex-grow border-t-2 border-[#132742] transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100" />
+                            <a href="#" class="text-[#132742] font-semibold transition-transform duration-500 group-hover:scale-110">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-selection w-full py-10 px-4">
+                <div class="flex justify-between items-center flex-wrap gap-8 lg:px-10 px-4">
+                    <div class="premium-selection-heading">
+                        <h1 class="lg:text-5xl text-4xl font-bold text-[#132742]">Premium Selection</h1>
+                        <h3 class="mt-2 lg:text-xl text-lg text-gray-600">Discover our premium property selections!</h3>
+                    </div>
+                    <div class="premium-selection-button w-full lg:w-auto flex justify-end">
+                        <a
+                            href="#"
+                            class="lg:px-12 px-8 py-3 border-2 border-[#132742] rounded-full text-[#132742] font-semibold lg:text-lg text-md relative after:content-[''] after:absolute after:top-[100%] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[100%] after:bg-[#132742] after:rounded-full after:transition-all after:duration-300 hover:after:w-[100%] hover:after:top-0 hover:text-white z-10 text-black transition-colors duration-300 overflow-hidden"
+                        >
+                            <span class="relative z-20">See All Properties</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="premium-selection-cards flex justify-between lg:px-10 px-4 mt-8 gap-10 flex-wrap">
+                    <div class="cards bg-white shadow-lg rounded-lg overflow-hidden flex flex-col cursor-pointer">
+                        <img src="https://images.pexels.com/photos/2397435/pexels-photo-2397435.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-[300px] object-cover object-center hover:scale-110 duration-300" />
+
+                        <div class="px-4 py-4">
+                            <h1 class="text-3xl text-[#132742] font-bold">Maplewood Manor</h1>
+                            <h1 class="text-gray-600 mt-1">Sector 45, Gurgaon, Haryana</h1>
+                            <div>
+                                <div class="flex justify-between flex-wrap mt-2 gap-4">
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/17805/17805298.png" alt="area image" class="w-4 h-4" />3500 sq. ft.</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/3159/3159436.png" alt="area image" class="w-4 h-4" />4 Bedrooms</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/4539/4539922.png" alt="area image" class="w-4 h-4" />3 Baths</p>
+                                </div>
+                                <hr class="w-full h-[3px] bg-gray-300 my-2" />
+                                <div class="flex items-center justify-between pr-4">
+                                    <p class="font-bold text-[#132742] text-2xl">₹1.8 Crore</p>
+                                    <p class="font-bold text-gray-600">FOR SALE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards bg-white shadow-lg rounded-lg overflow-hidden flex flex-col cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/20895982/pexels-photo-20895982/free-photo-of-deckchairs-by-swimming-pool-in-hotel.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt=""
+                            class="w-full h-[300px] object-cover object-center hover:scale-110 duration-300"
+                        />
+
+                        <div class="pl-2 py-4">
+                            <h1 class="text-3xl text-[#132742] font-bold">Sunnybrook Villa</h1>
+                            <h1 class="text-gray-600 mt-1">Whitefield, Bangalore, Karnataka</h1>
+                            <div>
+                                <div class="flex justify-between pr-8 flex-wrap mt-2 gap-4">
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/17805/17805298.png" alt="area image" class="w-4 h-4" />3000 sq. ft.</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/3159/3159436.png" alt="area image" class="w-4 h-4" />3 Bedrooms</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/4539/4539922.png" alt="area image" class="w-4 h-4" />3 Baths</p>
+                                </div>
+                                <hr class="w-[95%] h-[3px] bg-gray-300 my-2" />
+                                <div class="flex items-center justify-between pr-4">
+                                    <p class="font-bold text-[#132742] text-2xl">₹10 Lakhs/Month</p>
+                                    <p class="font-bold text-gray-600">FOR RENT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards bg-white shadow-lg rounded-lg overflow-hidden flex flex-col cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/18601099/pexels-photo-18601099/free-photo-of-house-on-lakeshore-in-forest.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt=""
+                            class="w-full h-[300px] object-cover object-center hover:scale-110 duration-300"
+                        />
+
+                        <div class="pl-2 py-4">
+                            <h1 class="text-3xl text-[#132742] font-bold">Lakeside Haven</h1>
+                            <h1 class="text-gray-600 mt-1">Vyttila, Kochi, Kerala</h1>
+                            <div>
+                                <div class="flex justify-between pr-8 flex-wrap mt-2 gap-4">
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/17805/17805298.png" alt="area image" class="w-4 h-4" />4000 sq. ft.</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/3159/3159436.png" alt="area image" class="w-4 h-4" />4 Bedrooms</p>
+                                    <p class="flex items-center gap-2 font-semibold text-gray-700"><img src="https://cdn-icons-png.flaticon.com/512/4539/4539922.png" alt="area image" class="w-4 h-4" />4 Baths</p>
+                                </div>
+                                <hr class="w-[95%] h-[3px] bg-gray-300 my-2" />
+                                <div class="flex items-center justify-between pr-4">
+                                    <p class="font-bold text-[#132742] text-2xl">₹2.1 Crore</p>
+                                    <p class="font-bold text-gray-600">FOR SALE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us w-full py-10">
+                <div class="about-us-heading flex justify-between lg:px-10 px-4">
+                    <h1 class="font-bold text-2xl text-[#132742]">Why Choose Us</h1>
+                    <a href="" class="group inline-flex items-center text-gray-800 text-base transition-colors duration-300 hover:text-gray-600 hover:font-bold font-semibold text-[#132742]">
+                        Learn More
+                        <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                    </a>
+                </div>
+                <div class="w-full flex lg:justify-between justify-center lg:px-10 px-4 flex-wrap lg:flex-nowrap">
+                    <div class="about-us-img lg:w-[40%] w-[90%] mt-8">
+                        <img src="https://images.pexels.com/photos/13203194/pexels-photo-13203194.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="mask-image rounded-lg" />
+                    </div>
+
+                    <div class="about-us-text-section lg:w-[70%] w-[100%] mt-8">
+                        <div class="about-us-text relative w-full">
+                            <h1 class="lg:absolute lg:left-[-25%] left-0 lg:text-6xl text-5xl bg-white font-semibold rounded-bl-lg px-4 pb-4 text-[#132742] -top-1 text-center lg:text-left">
+                                With 20+ years leading housing projects, we deliver trusted expertise.
+                            </h1>
+                        </div>
+
+                        <div class="relative lg:mt-56 mt-6 lg:pl-4">
+                            <h3 class="about-us-text  text-lg">
+                                At HomeVoyage, we bring over 20 years of experience in delivering premium real estate solutions. Whether you're searching for your dream home, a smart investment, or the perfect commercial space, we are
+                                committed to guiding you every step of the way.
+                            </h3>
+                            <h3 class="about-us-text text-lg mt-6">
+                                Trusted by thousands of homeowners and investors, we are committed to delivering transparency, integrity, and results with every property transaction.
+                            </h3>
+                        </div>
+                        <div class="lg:pl-8 pl-4 mt-4 flex flex-col gap-4">
+                            <p class="about-us-text flex items-center gap-2">
+                                <i class="fa-solid fa-check p-1 border-2 border-[#132742] rounded-full text-[#132742]"></i><span class="text-lg">Specializing in buying and selling, with a focus on trust and results.</span>
+                            </p>
+                            <p class="about-us-text flex items-center gap-2"><i class="fa-solid fa-check p-1 border-2 border-[#132742] rounded-full text-[#132742]"></i><span class="text-lg">Personalized service tailored to your needs.</span></p>
+                            <p class="about-us-text flex items-center gap-2">
+                                <i class="fa-solid fa-check p-1 border-2 border-[#132742] rounded-full text-[#132742]"></i><span class="text-lg">Proven track record of successful deals and happy clients.</span>
+                            </p>
+                            <p class="about-us-text flex items-center gap-2">
+                                <i class="fa-solid fa-check p-1 border-2 border-[#132742] rounded-full text-[#132742]"></i><span class="text-lg">Focus on seamless and stress-free property transactions.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spaces w-full lg:pt-10 pt-8 lg:px-10 px-4">
+                <div class="flex items-end relative">
+                    <div class="spaces-heading">
+                        <h1 class="font-bold text-[#132742] text-5xl">Explore Our Spaces</h1>
+                        <h3 class="text-xl text-gray-600 mt-2 font-semibold">
+                            Find the Perfect Home for Your Lifestyle.
+                        </h3>
+                    </div>
+
+                    <div>
+                        <div class="swiper-button-prev left-[92%] text-[#132742] text-lg border-2 border-[#132742] w-10 h-10 p-4 rounded-full overflow-hidden hidden lg:flex"></div>
+
+                        <div class="swiper-button-next bg-[#132742] overflow-hidden text-white rounded-full text-lg border-2 border-[#132742] w-10 h-10 p-4 rounded-full hidden lg:flex"></div>
+                    </div>
+                </div>
+
+                <div class="swiper mySwiper mt-4 h-[600px]">
+                    <div class="swiper-wrapper swiper-1 cursor-pointer select-none">
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/462205/pexels-photo-462205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Penthouse
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A penthouse offers exclusive top-floor living with breathtaking views and high-end features.
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/3965527/pexels-photo-3965527.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Mansion
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A large and luxurious house with multiple rooms, often with sprawling grounds and high-end features.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img
+                                src="https://images.pexels.com/photos/18280830/pexels-photo-18280830/free-photo-of-residential-house-with-a-car-parked-in-the-driveway.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt=""
+                                class="w-full h-full object-cover"
+                            />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Single-Family Home
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A single-family home is a detached dwelling that provides privacy, outdoor space, and family-friendly living.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/10920287/pexels-photo-10920287.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Bunglow
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A mansion is a grand, luxurious house with expansive rooms, exquisite architecture, lavish amenities, and sprawling grounds.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/9869371/pexels-photo-9869371.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Duplex
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A duplex is a single building featuring two separate living units, often with distinct entrances and layouts.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide lg:h-full h-full bg-red-200 relative rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/2480608/pexels-photo-2480608.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black opacity-50"></div>
+                            <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-8">
+                                <h1 class="text-white text-4xl font-bold relative">
+                                    Villa
+                                    <span class="absolute bottom-0 left-0 w-[60%] h-[2px] bg-white"></span>
+                                </h1>
+                                <h3 class="text-left text-gray-100 mt-4">
+                                    A villa is a luxurious detached home, typically situated in scenic locations like the countryside or coastal areas.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="testimonials w-full py-10 mt-6 px-4">
+                <div class="testimonials-heading w-full flex flex-col lg:items-center items-start">
+                    <h1 class="text-5xl text-[#132742] font-bold">Hear from Our Clients</h1>
+                    <h3 class="text-xl text-gray-600 mt-2">Hear It Straight from Our Happy Clients!</h3>
+                </div>
+
+                <div class="w-full lg:px-10 px-4">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper swiper-2 mt-8 py-10 cursor-pointer select-none">
+                            <div class="swiper-slide rounded-lg border-2 border-[#132742] shadow-md shadow-gray-400">
+                                <div class="lg:w-40 lg:h-40 w-24 h-24 rounded-full absolute left-1/2 transform -translate-x-1/2 overflow-hidden -top-10 border-2 border-black">
+                                    <img src="https://img.freepik.com/free-vector/young-girl-smiling-happy-character_24877-83363.jpg?ga=GA1.1.97926442.1726553492&semt=ais_hybrid" alt="" class="w-full h-full object-cover object-center" />
+                                </div>
+
+                                <div class="flex justify-between lg:px-10 px-4 pt-16 pb-6 items-center">
+                                    <div class="flex flex-col">
+                                        <h1 class="text-4xl font-bold">Aditi S.</h1>
+                                        <h3 class="text-xl text-gray-600 font-semibold">Maharastra</h3>
+                                    </div>
+                                    <div>
+                                        <h1><i class="fa-solid fa-star text-yellow-500 pr-2"></i><span class="font-semibold">4.5/5.0 </span></h1>
+                                    </div>
+                                </div>
+                                <div class="lg:px-10 px-4 pb-6">
+                                    <h3 class="text-left text-lg text-gray-600 font-semibold">I had a fantastic experience working with Home Voyage. They understood my needs and helped me find my dream home effortlessly!</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rounded-lg border-2 border-[#132742] shadow-md shadow-gray-400">
+                                <div class="lg:w-40 lg:h-40 w-24 h-24 rounded-full absolute left-1/2 transform -translate-x-1/2 overflow-hidden -top-10 border-2 border-black">
+                                    <img
+                                        src="https://img.freepik.com/premium-vector/young-man-avatar-character-vector-illustration-design_24877-18517.jpg?ga=GA1.1.97926442.1726553492&semt=ais_hybrid"
+                                        alt=""
+                                        class="w-full h-full object-cover object-center"
+                                    />
+                                </div>
+
+                                <div class="flex justify-between lg:px-10 px-4 pt-16 pb-6 items-center">
+                                    <div class="flex flex-col">
+                                        <h1 class="text-4xl font-bold">Rajesh K.</h1>
+                                        <h3 class="text-xl text-gray-600 font-semibold">Haryana</h3>
+                                    </div>
+                                    <div>
+                                        <h1><i class="fa-solid fa-star text-yellow-500 pr-2"></i><span class="font-semibold">4.0/5.0 </span></h1>
+                                    </div>
+                                </div>
+                                <div class="lg:px-10 px-4 pb-6">
+                                    <h3 class="text-left text-lg text-gray-600 font-semibold">The website offers a great selection of properties in Gurgaon, and their customer service team was responsive and knowledgeable.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rounded-lg border-2 border-[#132742] shadow-md shadow-gray-400">
+                                <div class="lg:w-40 lg:h-40 w-24 h-24 rounded-full absolute left-1/2 transform -translate-x-1/2 overflow-hidden -top-10 border-2 border-black">
+                                    <img
+                                        src="https://img.freepik.com/free-vector/beauty-woman-with-green-blouse-character_24877-83554.jpg?ga=GA1.1.97926442.1726553492&semt=ais_hybrid"
+                                        alt=""
+                                        class="w-full h-full object-cover object-center"
+                                    />
+                                </div>
+
+                                <div class="flex justify-between lg:px-10 px-4 pt-16 pb-6 items-center">
+                                    <div class="flex flex-col">
+                                        <h1 class="text-4xl font-bold">Priya G.</h1>
+                                        <h3 class="text-xl text-gray-600 font-semibold">Karnataka</h3>
+                                    </div>
+                                    <div>
+                                        <h1><i class="fa-solid fa-star text-yellow-500 pr-2"></i><span class="font-semibold">5.0/5.0 </span></h1>
+                                    </div>
+                                </div>
+                                <div class="lg:px-10 px-4 pb-6">
+                                    <h3 class="text-left text-lg text-gray-600 font-semibold">Finding a property in Bangalore can be overwhelming, but this website made the process so much easier.</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide rounded-lg border-2 border-[#132742] shadow-md shadow-gray-400">
+                                <div class="lg:w-40 lg:h-40 w-24 h-24 rounded-full absolute left-1/2 transform -translate-x-1/2 overflow-hidden -top-10 border-2 border-black">
+                                    <img src="https://img.freepik.com/free-vector/young-man-with-glasses-avatar_1308-175763.jpg?ga=GA1.1.97926442.1726553492&semt=ais_hybrid" alt="" class="w-full h-full object-cover object-center" />
+                                </div>
+
+                                <div class="flex justify-between lg:px-10 px-4 pt-16 pb-6 items-center">
+                                    <div class="flex flex-col">
+                                        <h1 class="text-4xl font-bold">Arvind P.</h1>
+                                        <h3 class="text-xl text-gray-600 font-semibold">Gujarat</h3>
+                                    </div>
+                                    <div>
+                                        <h1><i class="fa-solid fa-star text-yellow-500 pr-2"></i><span class="font-semibold">4.0/5.0 </span></h1>
+                                    </div>
+                                </div>
+                                <div class="lg:px-10 px-4 pb-6">
+                                    <h3 class="text-left text-lg text-gray-600 font-semibold">
+                                        This real estate website made my property search in Ahmedabad seamless. The listings are accurate, and I found several options within my budget.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer w-full flex justify-center items-center text-white pb-10">
+                <div class="lg:w-[80%] w-[90%] bg-[#132742] lg:px-10 px-4 rounded-lg text-white relative">
+                    <h1 class="text-3xl font-bold pt-4">
+                        Follow us <br />
+                        for updates
+                    </h1>
+
+                    <div class="flex justify-between items-center">
+                        <div class="text-2xl mt-1 flex items-center gap-4">
+                            <a href="#" class="transition-transform duration-300 ease-in-out hover:scale-110">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                            <a href="#" class="transition-transform duration-300 ease-in-out hover:scale-110">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+
+                            <a href="#" class="transition-transform duration-300 ease-in-out hover:scale-110">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+
+                            <a href="#" class="transition-transform duration-300 ease-in-out hover:scale-110">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="kameron absolute text-[#132742] font-bold lg:text-4xl text-2xl bg-white lg:py-6 py-4 rounded-bl-lg -right-1 -top-1 lg:px-6 px-4">
+                                Home Voyage
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-white text-lg flex justify-start lg:justify-end gap-4 mt-8">
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Home
+                        </a>
+
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Properties
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Buy
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Sell
+                        </a>
+                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Rent
+                        </a>
+                    </div>
+
+                    <div class="my-6">
+                        <h3>
+                            @2024 Home Voyage. All rights reserved. | email.com | +91 123456789
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+                integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            />
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="./script.js"></script>
+
+    </body>
+</html>
