@@ -11,51 +11,46 @@
     </head>
     <body>
         <div class="main h-full w-full">
-            <div class="navbar-container w-full flex justify-center items-center py-4">
+            <nav class="navbar-container w-full flex justify-center items-center py-4">
                 <div class="navbar w-[90%] h-[80px] bg-[#132742] flex justify-between px-10 items-center rounded-full">
                     <div class="nav-item">
-                        <a href="" class="kameron text-white font-bold text-2xl">
-                            Home Voyage
-                        </a>
+                        <a href="#" class="kameron text-white font-bold text-2xl">Home Voyage</a>
                     </div>
-                    <div class="nav-item text-white text-md lg:flex gap-10 hidden">
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Home
-                        </a>
-
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Properties
-                        </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Buy
-                        </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Sell
-                        </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Rent
-                        </a>
+                    
+                    <!-- Desktop Menu -->
+                    <div id="nav-links" class="nav-item text-white text-md lg:flex gap-10 hidden">
+                        <a href="#home" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Home</a>
+                        <a href="#properties" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Properties</a>
+                        <a href="#about us" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">About Us</a>
+                        <a href="#testimonials" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Testimonials</a>
                     </div>
-
+                    
                     <div class="nav-item flex gap-10 items-center text-white font-semibold relative">
-                        <a
-                            href="#"
-                            class="px-8 py-2 bg-white rounded-full text-black relative after:content-[''] after:absolute after:top-[100%] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[100%] after:bg-[#132742] after:rounded-full after:transition-all after:duration-300 hover:after:w-[120%] hover:after:top-0 hover:text-white z-0 text-black transition-colors duration-300 overflow-hidden hidden md:flex"
-                        >
-                            <span class="relative z-10">SignUp</span>
+                        <a href="#" class="px-8 py-2 bg-white rounded-full text-black relative hover:bg-[#132742] hover:text-white transition duration-300 hidden md:flex">
+                            SignUp
                         </a>
-
                         <a href="#" class="hidden md:flex">Login</a>
                     </div>
-                    <div class="nav-item sm:block md:hidden text-white">
-                        <a href="#">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <div class="nav-item sm:block md:hidden text-white cursor-pointer" id="menu-toggle">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-[#132742] text-white flex flex-col items-center justify-center space-y-6 text-xl hidden z-50 mobile-menu-enter">
+                <a href="#home" class="block mobile-menu-link">Home</a>
+                <a href="#properties" class="block mobile-menu-link">Properties</a>
+                <a href="#About Us" class="block mobile-menu-link">About Us</a>
+                <a href="#testimonials" class="block mobile-menu-link">Testimonials</a>
+                <a href="#" class="px-8 py-2 bg-white rounded-full text-black hover:bg-gray-300 transition">SignUp</a>
+                <a href="#">Login</a>
+                <button id="close-menu" class="absolute top-5 right-10 text-3xl">&times;</button>
             </div>
 
-            <div class="hero-section w-full h-[calc(100vh-112px)] lg:flex flex-col justify-between lg:px-10 px-4 relative pt-2 flex-wrap">
+            <div class="hero-section w-full h-[calc(100vh-112px)] lg:flex flex-col justify-between lg:px-10 px-4 relative pt-2 flex-wrap" id="home">
                 <div class=" hero-left lg:w-[55%] w-full mt-8">
                     <p class="hero-item-left text-7xl text-[#132742] font-bold text-center lg:text-left">
                         A New Way to Find Your Home.
@@ -98,7 +93,7 @@
                     <img src="https://images.pexels.com/photos/2371975/pexels-photo-2371975.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="hero-item-right absolute w-[60%] bottom-0 left-[-10%] rounded-t-full px-2 pt-2 bg-white" />
                 </div>
                 <div
-                    class="serach-div lg:w-[94.1%] w-full lg:flex lg:py-10 py-4 px-4 lg:absolute relative bg-white bottom-[-4%] z-50 rounded-lg flex flex-wrap gap-6 justify-center lg:justify-around items-center"
+                    class="serach-div lg:w-[94.1%] w-full lg:flex lg:py-10 py-4 px-4 lg:absolute relative bg-white bottom-[-4%] z-40 rounded-lg flex flex-wrap gap-6 justify-center lg:justify-around items-center"
                     style="box-shadow: 0px 0px 20px #132742;"
                 >
                     <div class="serach-div-items flex flex-col">
@@ -171,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="premium-selection w-full py-10 px-4">
+            <div class="premium-selection w-full py-10 px-4" id="properties">
                 <div class="flex justify-between items-center flex-wrap gap-8 lg:px-10 px-4">
                     <div class="premium-selection-heading">
                         <h1 class="lg:text-5xl text-4xl font-bold text-[#132742]">Premium Selection</h1>
@@ -261,7 +256,7 @@
                 </div>
             </div>
 
-            <div class="about-us w-full py-10">
+            <div class="about-us w-full py-10" id="about us">
                 <div class="about-us-heading flex justify-between lg:px-10 px-4">
                     <h1 class="font-bold text-2xl text-[#132742]">Why Choose Us</h1>
                     <a href="" class="group inline-flex items-center text-gray-800 text-base transition-colors duration-300 hover:text-gray-600 hover:font-bold font-semibold text-[#132742]">
@@ -412,7 +407,7 @@
                 </div>
             </div>
 
-            <div class="testimonials w-full py-10 mt-6 px-4">
+            <div class="testimonials w-full py-10 mt-6 px-4" id="testimonials">
                 <div class="testimonials-heading w-full flex flex-col lg:items-center items-start">
                     <h1 class="text-5xl text-[#132742] font-bold">Hear from Our Clients</h1>
                     <h3 class="text-xl text-gray-600 mt-2">Hear It Straight from Our Happy Clients!</h3>
@@ -540,23 +535,21 @@
                         </div>
                     </div>
 
-                    <div class="text-white text-lg flex justify-start lg:justify-end gap-4 mt-8">
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                    <div class="nav-links text-white text-lg flex justify-start lg:justify-end gap-4 mt-8">
+                        <a href="#home" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
                             Home
                         </a>
 
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                        <a href="#properties" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
                             Properties
                         </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Buy
+                        <a href="#about us" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            About Us
                         </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Sell
+                        <a href="#testimonials" class="nav-link relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
+                            Testimonials
                         </a>
-                        <a href="#" class="relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">
-                            Rent
-                        </a>
+                      
                     </div>
 
                     <div class="my-6">

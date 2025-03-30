@@ -1,3 +1,48 @@
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeMenu = document.getElementById('close-menu');
+const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden', 'mobile-menu-exit-active');
+    setTimeout(() => {
+        mobileMenu.classList.add('mobile-menu-enter-active');
+    }, 10);
+});
+
+closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('mobile-menu-enter-active');
+    mobileMenu.classList.add('mobile-menu-exit');
+    setTimeout(() => {
+        mobileMenu.classList.add('hidden', 'mobile-menu-exit-active');
+        mobileMenu.classList.remove('mobile-menu-exit');
+    }, 300);
+});
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('mobile-menu-enter-active');
+        mobileMenu.classList.add('mobile-menu-exit');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden', 'mobile-menu-exit-active');
+            mobileMenu.classList.remove('mobile-menu-exit');
+        }, 300);
+    });
+});
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80, // Adjust for fixed navbar
+                behavior: 'smooth'
+            });
+        }
+    });
+});
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -9,8 +54,8 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".swiper-button-next",  // Custom next button
-      prevEl: ".swiper-button-prev",  // Custom prev button
+      nextEl: ".swiper-button-next",  
+      prevEl: ".swiper-button-prev",  
     },
     breakpoints: {
       1024: {
@@ -23,75 +68,68 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1, // Display 2 slides at once
-    spaceBetween: 30, // Space between slides
-    loop: true, // Enable looping through slides
+    slidesPerView: 1, 
+    spaceBetween: 30, 
+    loop: true, 
     autoplay: {
-        delay: 300, // Slide change delay (3 seconds)
-        disableOnInteraction: false, // Keep autoplay even if user interacts
+        delay: 300, 
+        disableOnInteraction: false, 
     },
-    speed: 1500, // Transition speed (in ms), makes it smoother
+    speed: 1500, 
     easing: 'ease-in-out',
     breakpoints: {
-        // For large screens (lg, typically 1024px and above)
         1024: {
-          slidesPerView: 2, // Show 3 slides on large screens
-          spaceBetween: 30, // Maintain spacing between slides
+          slidesPerView: 2, 
+          spaceBetween: 30, 
         },
-      }, // Smooth easing function (optional)
+      }, 
 });
 
-// Initialize GSAP timeline
 const tl = gsap.timeline();
 
-// Animate the navbar sliding from the top
 tl.from(".navbar", {
-   // Start position (off-screen)
-  opacity: 0, // Fade in
-  duration: 1, // Duration of animation
-  ease: "power3.out", // Easing for smoothness
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out", 
 });
 
-// Animate each navbar item one by one
 tl.from(".nav-item", {
     
-    y: -50, // Each item starts from above
-  opacity: 0, // Fade in each item
-  duration: 0.5, // Duration for each item
-  stagger: 0.2, // Delay between each item's animation
-  ease: "power2.out", // Smooth easing
-}, "-=0.5"); // Start after the navbar animation is almost done
+    y: -50, 
+  opacity: 0,
+  duration: 0.5,
+  stagger: 0.2, 
+  ease: "power2.out",
+}, "-=0.5"); 
 
 tl.from(".hero-item-left", {
     delay:0.2,
-    y: -50, // Each item starts from above
-  opacity: 0, // Fade in each item
-  duration: 0.5, // Duration for each item
-  stagger: 0.2, // Delay between each item's animation
-  ease: "power2.out", // Smooth easing
+    y: -50, 
+  opacity: 0,
+  duration: 0.5, 
+  stagger: 0.2,
+  ease: "power2.out", 
 }, "-=0.5");
 
 tl.from(".hero-item-right", {
-    // Start position (off-screen)
-   opacity: 0, // Fade in
-   duration: 1, // Duration of animation
-   ease: "power3.out",  // Easing for smoothness
+   opacity: 0, 
+   duration: 1, 
+   ease: "power3.out",  
  });
  
  tl.from(".serach-div", {
-    // Start position (off-screen)
-   opacity: 0, // Fade in
-   duration: 1, // Duration of animation
-   ease: "power3.out",  // Easing for smoothness
+   opacity: 0,
+   duration: 1, 
+   ease: "power3.out",  
  });
 
  tl.from(".serach-div-items", {
     delay:0.2,
-    y: -50, // Each item starts from above
-  opacity: 0, // Fade in each item
-  duration: 0.5, // Duration for each item
-  stagger: 0.2, // Delay between each item's animation
-  ease: "power2.out", // Smooth easing
+    y: -50, 
+  opacity: 0,
+  duration: 0.5, 
+  stagger: 0.2,
+  ease: "power2.out", 
 }, "-=0.5");
 
  

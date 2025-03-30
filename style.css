@@ -5,7 +5,7 @@
 
 .kameron {
     font-family: "Kameron", serif;
-    font-weight: 400; /* Or 700 for bold */
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -34,5 +34,24 @@
 
 
 .premium-selection-cards {
-  perspective: 1000px;  /* Defines the 3D space in which the rotation will happen */
+  perspective: 1000px;  
+}
+
+.mobile-menu-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.mobile-menu-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.mobile-menu-exit {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.mobile-menu-exit-active {
+  transform: translateY(-100%);
+  opacity: 0;
 }
